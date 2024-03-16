@@ -3,7 +3,7 @@ window.marker = null;
 function initialize() {
   var map;
 
-  var nottingham = new google.maps.LatLng(51.507351, -0.127758);
+  var osteodao = new google.maps.LatLng(40.399227, -8.132380);
 
   var style = [{
     "featureType": "road.highway",
@@ -77,7 +77,7 @@ function initialize() {
 
   var mapOptions = {
     // SET THE CENTER
-    center: nottingham,
+    center: osteodao,
 
     // SET THE MAP STYLE & ZOOM LEVEL
     mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -111,7 +111,7 @@ function initialize() {
   var pinIcon = new google.maps.MarkerImage(marker_image, null, null, null, new google.maps.Size(74, 73));
 
   marker = new google.maps.Marker({
-    position: nottingham,
+    position: osteodao,
     map: map,
     icon: pinIcon,
     title: 'eventre'
